@@ -24,7 +24,7 @@ DBSCAN中为了增加抗噪声的能力，引入了核心对象等概念。
 
 DBSCAN 算法核心是找到密度相连对象的最大集合。参考 [百度百科-DBSCAN](https://baike.baidu.com/item/DBSCAN/4864716?fr=aladdin)
 
-![DBSCAN illustration](DBSCAN_with_Kdtree_resources\400px-DBSCAN-Illustration.svg.png) 
+![DBSCAN illustration](https://github.com/JaminJiang/MyBlogs/tree/master/point_cloud_blogs/DBSCAN_with_Kdtree_resources\400px-DBSCAN-Illustration.svg.png)
 
 如图，$minPts=4$，红点为高密度核心点，黄点为边界点，蓝点为低密度噪声点。红黄点组成了一个簇（聚类）。 
 > 核心点、边界点、噪声点对应于不同密度，这也是 DBSCAN 属于基于密度聚类方法的原因，也是其具有抗噪声能力的原因。
@@ -219,18 +219,19 @@ protected:
 ## 3. 算法评估
 ### 3.1 算法效果
 原始点云总点数为460400，如下图：
-![](DBSCAN_with_Kdtree_resources/original_point_cloud.png)
+![](https://github.com/JaminJiang/MyBlogs/tree/master/point_cloud_blogs/DBSCAN_with_Kdtree_resources/original_point_cloud.png)
 降采样并去掉地面平面后总点数为20513，如下图：
-![](DBSCAN_with_Kdtree_resources/preprocessed_point_cloud.png)
+![](https://github.com/JaminJiang/MyBlogs/tree/master/point_cloud_blogs/DBSCAN_with_Kdtree_resources/preprocessed_point_cloud.png)
 三种 DBSCAN 算法的效果一样，除去点数太少的聚类后，总共有4个聚类，如下图：
-![](DBSCAN_with_Kdtree_resources/DBSCAN_result.png)
+![](https://github.com/JaminJiang/MyBlogs/tree/master/point_cloud_blogs/DBSCAN_with_Kdtree_resources/DBSCAN_result.png)
 而 pcl::EuclideanClusterExtraction 算法只聚类出两类，主要原因是右侧稀疏噪声点云将3团点云连成了一团。如下图：
-![](DBSCAN_with_Kdtree_resources/EuclideanClusterExtraction_result.png)
+![](https://github.com/JaminJiang/MyBlogs/tree/master/point_cloud_blogs/DBSCAN_with_Kdtree_resources/EuclideanClusterExtraction_result.png)
 对比可见，DBSCAN 具有一定的抗噪声能力。
+
 ### 3.1 算法效率
 测试机器处理器：Intel® Core™ i7-5820K CPU @ 3.30GHz × 12
 
-聚类过程耗时如下表所示：
+聚类过程耗时如下表所示单位s：
 |DBSCAN simple|DBSCAN pre-compute|DBSCAN Kdtree|pcl::EuclideanClusterExtraction|
 |---|---|---|---|
 |12.402|6.043|0.150|0.139|
