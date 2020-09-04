@@ -287,7 +287,7 @@ int tdoa_ransac(const Position2D landmarks[], const double distances[],
 }
 ```
 其中effective_landmark_mask是用来标识地图中所有监测站之中，哪些监测站本次测量有数据，为1表示有数据，为0表示无数据。
-# 3 项目描述
+## 3. 项目描述
 全部工程代码：[github-RANSAC_TDOA_CHAN](https://github.com/JaminJiang/RANSAC_TDOA_CHAN)
 
 项目使用C语言实现了TDOA Chan定位算法，并使用了RANSAC思想排除异常点的干扰，获取稳定的解。本项目中实现了两个版本的Chan算法，一个是基于gsl运算库（ransac_tdoa_gsl.h），另一个不依赖gsl库（ransac_tdoa.h）。main.c中包含了一段测试代码。编译方式和gsl库配置方法详见readme.md
@@ -295,5 +295,5 @@ int tdoa_ransac(const Position2D landmarks[], const double distances[],
 ## 4. 算法评估
 经测试算法运行效率高，精度高，且可以排除外点的干扰。
 
-# 5. 参考文献
+## 5. 参考文献
 1. Chan, Yiu-Tong, and K. C. Ho. “A simple and efficient estimator for hyperbolic location.” IEEE Transactions on signal processing 42.8 (1994): 1905-1915.
