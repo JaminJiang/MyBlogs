@@ -67,7 +67,6 @@ Chan算法只需求解一次最小二乘和两次加权最小二乘法即可得�
     inverse_res = matrix_inverse_inplace(FI);
     if (!inverse_res) {
         success_flag = 0;
-        DEBUG("failed when invert FI.\n");
         goto LABEL_FREE_BEFORE_EXIT;
     }
 
@@ -123,6 +122,7 @@ int solve(gsl_matrix* G, gsl_matrix* b, gsl_matrix* weight, gsl_matrix* result) 
 上一步中，我们忽略了$x$, $y$, $r_1$的相关性。这里，我们构建新的关于$(x-x_1)^2$和$(y-y_1)^2$的方程。利用上一步计算的较准确位置，计算协方差（权重），并最终利用加权最小二乘法计算准确值。
 方程如下（参考[CSDN博客-Chan定位算法](https://blog.csdn.net/qq_23947237/article/details/82715784)）：
 ![TDOA step3](https://raw.githubusercontent.com/JaminJiang/MyBlogs/master/Localization/RANSAC_TDOA/RANSAC_TDOA_resources/TDOA-step3.png)
+
 权重计算参考论文[1]。
 算法实现如下：
 ```
@@ -138,7 +138,6 @@ int solve(gsl_matrix* G, gsl_matrix* b, gsl_matrix* weight, gsl_matrix* result) 
     inverse_res = matrix_inverse_inplace(CovZa);
     if (!inverse_res) {
         success_flag = 0;
-        DEBUG("failed when invert CovZa.\n");
         goto LABEL_FREE_BEFORE_EXIT;
     }
 
@@ -158,7 +157,6 @@ int solve(gsl_matrix* G, gsl_matrix* b, gsl_matrix* weight, gsl_matrix* result) 
     inverse_res = matrix_inverse_inplace(sFI);
     if (!inverse_res) {
         success_flag = 0;
-        DEBUG("failed when invert sFI.\n");
         goto LABEL_FREE_BEFORE_EXIT;
     }
     // Ga'
@@ -178,11 +176,10 @@ int solve(gsl_matrix* G, gsl_matrix* b, gsl_matrix* weight, gsl_matrix* result) 
 
     solve_res = solve(sGa, sh, sFI, Za2);
 ```
-最后，由于我们这一步求出来的是$(x-x_1)^2$和$(y-y_1)^2$，所以可以根据($x_1$, $y_1$)坐标确定四个点，再以前两步算出的位置作为先验，排除其他位置，就可以算出准确位置，代码如下：
+最后，由于我们这一步求出来的是$(x-x_1)^2$和$(y-y_1)^2$，所以可以根据($x_1$, $y_1$)坐标确定四个点，再将前两步算出的位置作为先验，排除其他位置，就可以算出准确位置，代码如下：
 ```
     double delta_x_0_abs = gsl_matrix_get(Za2, 0, 0) > 0 ? sqrt(gsl_matrix_get(Za2, 0, 0)) : 0;
     double delta_y_0_abs = gsl_matrix_get(Za2, 1, 0) > 0 ? sqrt(gsl_matrix_get(Za2, 1, 0)) : 0;
-    DEBUG("delta_x_0_abs:%f, delta_y_0_abs:%f.\n", delta_x_0_abs, delta_y_0_abs);
     double popssible_poses[4][2] = {
         {landmarks[index_0].x - delta_x_0_abs, landmarks[index_0].y - delta_y_0_abs}, 
         {landmarks[index_0].x + delta_x_0_abs, landmarks[index_0].y - delta_y_0_abs},
@@ -240,28 +237,14 @@ int tdoa_ransac(const Position2D landmarks[], const double distances[],
     int* all_fit_indexes_best = (int*)malloc(sizeof(int) * effective_landmark_num);
     Position2D tmp_pos;
     for (int i = 0; i < RANSAC_MAX_ITERATION; i++) {
-        DEBUG("========iteration:%d===========\nchosen indexes:", i);
         int* sample_indexes = sample_output_indexes[i];
-        for (int j = 0; j < CALCULABLE_LEAST_CNT; j++) {
-            DEBUG("%d,", sample_indexes[j]);
-        }
-        DEBUG("\n");
-
         int success_once = tdoa_chan(landmarks, distances, total_landmark_num, 
             sample_indexes, CALCULABLE_LEAST_CNT, threshold, &tmp_pos);
         if (success_once) {
-            DEBUG("result x:%f, y:%f\n", tmp_pos.x, tmp_pos.y);
-
             double total_residual = DBL_MAX;
             int n = get_all_fit_indexes(landmarks, distances, total_landmark_num, effective_landmark_indexes, effective_landmark_num, 
                 sample_indexes, CALCULABLE_LEAST_CNT, &tmp_pos, threshold, 
                 all_fit_indexes, &total_residual);
-
-            DEBUG("fit cnt:%d, residual:%f, all_fit_indexes:", n, total_residual);
-            for (int i = 0; i < n; i++) {
-                DEBUG("%d,", all_fit_indexes[i]);
-            }
-            DEBUG("\n");
             if (n > fit_cnt_best || (n == fit_cnt_best && total_residual < residual_best)) {
                 residual_best = total_residual;
                 fit_cnt_best = n;
@@ -279,18 +262,8 @@ int tdoa_ransac(const Position2D landmarks[], const double distances[],
     }
     // refine model
     if (success_flag) {
-        DEBUG("\n===============\nbefore refine[best]. best sample_indexes:");
-        for (int i = 0; i < CALCULABLE_LEAST_CNT; i++) {
-            DEBUG("%d,", sample_indexes_best[i]);
-        }
-        DEBUG(" result:%f, %f, residual:%f.\n", result_pos->x, result_pos->y, residual_best);
         if (ENABLE_RANSAC_REFINE && fit_cnt_best > CALCULABLE_LEAST_CNT) {
             Position2D pos_refined;
-            DEBUG("fit_cnt_best:%d. refine indexes:", fit_cnt_best);
-            for (int i = 0; i < fit_cnt_best; i++) {
-                DEBUG("%d,", all_fit_indexes_best[i]);
-            }
-            DEBUG("\n");
             int success_once = tdoa_chan(landmarks, distances, total_landmark_num, 
                 all_fit_indexes_best, fit_cnt_best, threshold, &pos_refined);
             if (success_once) {
@@ -301,7 +274,6 @@ int tdoa_ransac(const Position2D landmarks[], const double distances[],
                     distances_estimated[i] = sqrt(pow((landmarks[i].x - pos_refined.x), 2) + pow((landmarks[i].y - pos_refined.y), 2));
                 }
                 residual_refined = calc_total_residual(distances, distances_estimated, sample_indexes_best, CALCULABLE_LEAST_CNT, all_fit_indexes_best, fit_cnt_best);
-                DEBUG("after refine. result:%f, %f, residual:%f\n", pos_refined.x, pos_refined.y, residual_refined);
                 if (residual_refined < residual_best) {
                     result_pos->x = pos_refined.x;
                     result_pos->y = pos_refined.y;
