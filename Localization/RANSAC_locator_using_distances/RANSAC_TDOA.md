@@ -8,11 +8,13 @@
 
 ## 1. 三边测距定位算法简介
 利用信号源到各个监测站的距离，最少通过三个监测站，我们就能确定信号的位置，该方法为三边测距定位。如下图,以监测站为中心，距离为半径作圆可以确定信号的位置：
+
 ![三边测距](https://raw.githubusercontent.com/JaminJiang/MyBlogs/master/Localization/RANSAC_locator_using_distances/resources/3line.jpg)
 
 ## 2. 算法
 ### 2.1 算法推导
 算法推导如下图（参考[知乎-三边测量及多边测量](https://zhuanlan.zhihu.com/p/108771993)）：
+
 ![多边测距定位算法推导](https://raw.githubusercontent.com/JaminJiang/MyBlogs/master/Localization/RANSAC_locator_using_distances/resources/3line_algo.jpg)
 
 ### 2.2 算法实现
