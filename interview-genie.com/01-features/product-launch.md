@@ -5,7 +5,7 @@ date: 2024-09-22T18:55:27.154Z
 excerpt: 基于大模型的AI面试助手--面试精灵正式发布！面试精灵是以顶级GPT为核的AI面试助手，从简历优化、模拟面试、在线面试回答、到面试记录与分析，提供全流程的面试辅助。助您拿到心仪的大厂Offer！目前功能免费开放，赶紧注册体验吧！
 coverImage: https://pic.interview-genie.com/00-interview-genie-how2use-main-sm.jpg
 tags:
-  - Documentation
+  - News
 ---
 
 # 引言
@@ -31,9 +31,17 @@ tags:
 用户可上传简历和职位需求，定制化面试会话，获得与个人职业目标契合的智能回复。
 ![个性化](https://pic.interview-genie.com/customizable-CN-sm.jpg)
 
+## 提示词优化
+通过提示词优化，实现输出结果要点先行、条理清晰、并用黑体强调关键点，帮助您快速抓住回复重点。搭配前端优化，完美支持Latex公式、流程图、泳道图等显示，AI 输出展示简单直观。
+![提示词优化](https://pic.interview-genie.com/prompt-optimized-CN-sm.jpg)
+
 ## 优质优价
 提供免费使用配额，通过技术优化性价比，以低成本帮助用户撬动高薪工作。平均每场面试（1小时）耗费低于10元。发布阶段，所有功能免费开放，[快来体验吧](https://interview-genie.com)。
 ![优质优价](https://pic.interview-genie.com/affordable-CN-sm.jpg)
+
+## 笔试助手
+通过多设备隐蔽互联，以支持跨设备远程截屏。然后使用视觉大模型自动识别问题，并帮您生成答案。只需访问网站，无需下载安装APP，无需复杂的设置，操作简单，隐蔽性强。
+![笔试助手](https://pic.interview-genie.com/written-exam-CN-sm.jpg)
 
 ## 轻松可达
 无需安装，随时随地访问，使面试准备变得轻松。
@@ -48,7 +56,7 @@ tags:
 
 # 面试精灵如何助您一臂之力？
 面试精灵的在线面试回答功能非常强大。支持简历和岗位描述文档上传，以期更了解你的经历和描述，生成更个性化、更贴切的回复。利用实时语音识别系统，声纹识别技术，结合长上下文大模型快速深入理解面试官意图。使用RAG技术进一步扩充强大GPT的知识，轻松应付各类面试问题。面试精灵--最懂你，最懂面试官，最懂知识的大模型AI面试助手。
-![面试精灵操作界面](https://pic.interview-genie.com/00-interview-genie-how2use-main-sm.jpg)
+![面试精灵操作界面](https://pic.interview-genie.com/00-interview-genie-how2use-main-sm-v2.jpg)
 
 新用户注册后，进入主页[interview-genie.com](https://interview-genie.com)，点击面试助手对话框，即可通过输入框与面试精灵进行对话。
 
