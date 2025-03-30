@@ -142,10 +142,8 @@ tags:
 欢迎您使用小红书扫码关注我们，实时获取更多面试精灵功能更新发布。
 ![面试精灵小红书二维码](https://pic.interview-genie.com/interview-genie-XiaoHongShu.jpg)
 
-如果您有任何功能建议或遇到问题，我们邀请您通过微信扫码，加入面试精灵用户群，请不吝赐教。
-![面试精灵微信用户群二维码](https://pic.interview-genie.com/interview-genie-WeixinGroup.jpg)
-
-您也可以随时通过邮件联系我们：[interview-genie@qq.com](mailto:interview-genie@qq.com)。
+如果您有任何功能建议或遇到问题，我们邀请您点击下方链接后，微信扫码，加入面试精灵用户群，请不吝赐教。
+更多联系方式请点击：[联系我们](https://interview-genie.com/blog/contact-us)
 
 ## bug 反馈
 如果您在使用过程中遇到问题或bug，请即时反馈给[我们](mailto:interview-genie@qq.com)
