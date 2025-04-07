@@ -2,7 +2,7 @@
 slug: new-feature-ai-search
 title: 金三银四招聘季，“面试精灵”又发新功能——AI联网搜索
 date: 2025-03-17T17:31:27.154Z
-excerpt: 金三银四招聘季，正是收割 Offer 的好时候。基于大模型的AI面试助手--面试精灵又添新功能：AI联网搜索。通过网络检索最新的技术发展、时事分析、公司简介信息，提高实效性问题回复效果，降低大模型幻觉率，助您拿到心仪 Offer。赶紧注册体验吧！
+excerpt: 金三银四招聘季，正是收割 Offer 的好时候。基于大模型的AI面试助手--面试精灵又添新功能：AI联网搜索。通过网络检索最新的技术发展、时事分析、公司简介信息，提高时效性问题回复效果，降低大模型幻觉率，助您拿到心仪 Offer。赶紧注册体验吧！
 coverImage: https://pic.interview-genie.com/04-new-feature-AI-search-demo.jpg
 tags:
   - News

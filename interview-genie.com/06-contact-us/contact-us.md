@@ -22,7 +22,7 @@ tags:
 
 ## 微信群
 如果您有任何功能建议或遇到问题，我们邀请您通过微信扫码，加入面试精灵用户群，请不吝赐教。
-![面试精灵微信用户群二维码](https://pic.interview-genie.com/interview-genie-WeixinGroup-20250330-203000.jpg)
+![面试精灵微信用户群二维码](https://pic.interview-genie.com/interview-genie-WeixinGroup-sm-20250406-221000.jpg)
 
 ## QQ群
 请搜索群号：753046444
