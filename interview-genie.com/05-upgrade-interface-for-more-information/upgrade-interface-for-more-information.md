@@ -3,7 +3,7 @@ slug: upgrade-interface-for-more-information
 title: 面试精灵大升级！个性化AI面试助手助你收割金三银四Offer
 date: 2025-03-30T12:31:27.154Z
 excerpt: 金三银四招聘季，别再为面试焦虑！面试精灵全新升级，支持个性化信息设置，让AI回复精准贴合你的简历和目标岗位，助您拿到心仪 Offer。赶紧注册体验吧！
-coverImage: https://pic.interview-genie.com/05-upgrade-interface-for-more-information-prepare.jpg
+coverImage: https://pic.interview-genie.com/05-upgrade-interface-for-more-information-prepare-0407v1.png
 tags:
   - News
 ---
@@ -40,9 +40,8 @@ tags:
 - **必填项：** 应聘公司、目标职位、个人简历（直接上传PDF）
 - **高级设置：** 自然语言、编程语言、职位描述（复制粘贴即可）
 
-“面试准备”对话框如下图：
-![面试精灵面试准备对话框](https://pic.interview-genie.com/05-upgrade-interface-for-more-information-prepare.jpg)
-
+“面试准备”对话框如下图：  
+![面试精灵面试准备对话框](https://pic.interview-genie.com/05-upgrade-interface-for-more-information-prepare-0407v1.png)
 
 ## 轻松管理我的简历
 如果您还未上传简历，或是您需要补充上传符合面试职位的简历，您可以点击“面试准备”对话框中“我的简历”最右侧的“+”号，或是点击侧边栏“我的简历”，然后上传最新的简历。“我的简历”页面如下图所示：
