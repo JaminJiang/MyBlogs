@@ -16,13 +16,16 @@ tags:
 关键字：Interview Genie, 面试精灵, AI面试助手, 简历助手, ChatGPT 面试, 大模型面试, 大型语言模型, 面试大师, 智能面试, AI笔试助手, AI联网搜索, 金三银四招聘季, 联系方式
 
 # 联系方式
+## 微信群
+如果您有任何功能建议或遇到问题，我们邀请您通过微信扫码，加入面试精灵用户群，请不吝赐教。  
+![面试精灵微信用户群二维码](https://pic.interview-genie.com/interview-genie-WeixinGroup-sm-20250625.jpg)
+
+若微信群更新不及时，请用微信扫下方二维码添加客服，拉您进群。
+![面试精灵小二微信二维码](https://pic.interview-genie.com/interview-genie-Weixin-person-xs.png)
+
 ## 小红书
 欢迎您使用小红书扫码关注我们，实时获取更多面试精灵功能更新发布，我们也会在这里分享面试动向、面试经验、面试技巧等。
 ![面试精灵小红书二维码](https://pic.interview-genie.com/interview-genie-XiaoHongShu.jpg)
-
-## 微信群
-如果您有任何功能建议或遇到问题，我们邀请您通过微信扫码，加入面试精灵用户群，请不吝赐教。
-![面试精灵微信用户群二维码](https://pic.interview-genie.com/interview-genie-WeixinGroup-sm-20250406-221000.jpg)
 
 ## QQ群
 请搜索群号：753046444

@@ -1,4 +1,4 @@
----
+【---
 slug: how2use
 title: 面试精灵使用手册
 date: 2024-12-15T19:32:27.154Z
@@ -14,32 +14,15 @@ tags:
 面试精灵的在线面试回答功能非常强大。支持简历和岗位描述文档上传，以期更了解你的经历和描述，生成更个性化、更贴切的回复。利用实时语音识别系统，声纹识别技术，结合长上下文大模型快速深入理解面试官意图。使用 RAG（检索增强生成） 技术进一步扩充强大GPT的知识，轻松应付各类面试问题。支持双栏模式，极速&精准我全都要。面试精灵--最懂你，最懂面试官，最懂知识的大模型AI面试助手。
 
 # 快速引导
-1. 设置：[<u>面试/笔试前的准备-设置</u>](https://interview-genie.com/blog/how2use/#%E9%9D%A2%E8%AF%95%E5%89%8D%E7%9A%84%E5%87%86%E5%A4%87-%E8%AE%BE%E7%BD%AE)
-2. 面试助手：[<u>面试操作</u>](https://interview-genie.com/blog/how2use/#%E9%9D%A2%E8%AF%95%E7%95%8C%E9%9D%A2%E4%B8%80%E8%A7%88)
-3. 笔试/测评：[<u>笔试功能</u>](https://interview-genie.com/blog/how2use/#%E7%AC%94%E8%AF%95%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D)
+1. 设置：[面试/笔试前的准备-设置](https://interview-genie.com/blog/how2use/#%E9%9D%A2%E8%AF%95%E5%89%8D%E7%9A%84%E5%87%86%E5%A4%87-%E8%AE%BE%E7%BD%AE)
+2. 面试助手：[面试操作](https://interview-genie.com/blog/how2use/#%E9%9D%A2%E8%AF%95%E7%95%8C%E9%9D%A2%E4%B8%80%E8%A7%88)
+3. 笔试/测评：[笔试功能](https://interview-genie.com/blog/how2use/#%E7%AC%94%E8%AF%95%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D)
 
 # 使用教程
-## 视频教程
-<div class="video-container" style="position: relative; padding-top: 56.25%; margin: 20px auto; max-width: 640px; width: 100%;">
-<iframe 
-    src="//player.bilibili.com/player.html?isOutside=true&aid=114738105159883&bvid=BV1YBKVzxE8z&cid=30674716084&p=1&autoplay=false" 
-    scrolling="no" 
-    border="0" 
-    frameborder="no" 
-    framespacing="0" 
-    allowfullscreen="true" 
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-</iframe>
-</div>
-
-**视频章节快速跳转链接：**
-1. <a href="https://www.bilibili.com/video/BV1YBKVzxE8z/?t=83" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">面试基础用法</a>
-2. <a href="https://www.bilibili.com/video/BV1YBKVzxE8z/?t=184" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">面试隐蔽玩法</a>
-3. <a href="https://www.bilibili.com/video/BV1YBKVzxE8z/?t=309.5" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">笔试用法</a>
 
 ## 注册与登录
 
-新用户打开[<u>面试精灵应用网站</u>](https://interview-genie.com/)后，打开侧边栏，点击左下角登录按钮，打开登录页面。（您也可以点击右上角“设置”按钮，在弹出对话框中点击“登录”按钮，从而打开登录页面。）
+新用户打开[面试精灵应用网站](https://interview-genie.com/)后，打开侧边栏，点击左下角登录按钮，打开登录页面。（您也可以点击右上角“设置”按钮，在弹出对话框中点击“登录”按钮，从而打开登录页面。）
 
 ![登录页面](https://pic.interview-genie.com/00-interview-genie-how2use-auth-sm.jpg)
 
@@ -129,8 +112,8 @@ tags:
 - “🔥专业强化版”
 - “🚀极限精英版”：更强推理能力、更强理解能力
 
-模型评测结果请点击链接查看：[<u>「面试精灵」新一代AI引擎评测</u>](https://interview-genie.com/blog/extreme-llm/)
-定价信息请点击链接查看：[<u>面试精灵-定价</u>](https://interview-genie.com/blog/pricing/)
+模型评测结果请点击链接查看：[「面试精灵」新一代AI引擎评测](https://interview-genie.com/blog/extreme-llm/)
+定价信息请点击链接查看：[面试精灵-定价](https://interview-genie.com/blog/pricing/)
 
 ##### AI 联网搜索
 开启“AI联网搜索”功能非常简单，只需按照以下步骤操作：
@@ -207,7 +190,7 @@ tags:
 
 ### 笔试前的准备
 #### 笔试设置
-笔试设置和笔试准备对话框设置方法参考前面的：[<u>面试前的准备-设置</u>](https://interview-genie.com/blog/how2use/#%E9%9D%A2%E8%AF%95%E5%89%8D%E7%9A%84%E5%87%86%E5%A4%87-%E8%AE%BE%E7%BD%AE)
+笔试设置和笔试准备对话框设置方法参考前面的：[面试前的准备-设置](https://interview-genie.com/blog/how2use/#%E9%9D%A2%E8%AF%95%E5%89%8D%E7%9A%84%E5%87%86%E5%A4%87-%E8%AE%BE%E7%BD%AE)
 
 笔试推荐开启“🚀极限精英版”大模型，获取最佳回复效果。
 
@@ -256,8 +239,104 @@ tags:
 都支持的哦~面试精灵支持您在非面试设备（如另一台手机/平板）上进行面试辅助，共享屏幕也不怕，绝对的隐蔽安全，支持所有视频软件、面试平台。建议您在非面试设备上的设置-音频-对话模式中选择“自动-多人聊天”模式，该模式支持录入您的声音指纹。在实时面试的时候，自动识别说话人和面试官问题，然后为您生成满意答案。  
 面试精灵强大的大模型能力搭配联网搜索能力，轻松一堆各行各业、各类面试问题，支持ai面试，用魔法打败魔法~
 
-## 联系我们  
-遇到问题？想要新功能？加入用户群交流：[<u>联系我们</u>](https://interview-genie.com/blog/contact-us)  
+## 联系我们
+欢迎您使用小红书扫码关注我们，实时获取更多面试精灵功能更新发布。
+![面试精灵小红书二维码](https://pic.interview-genie.com/interview-genie-XiaoHongShu.jpg)
+
+如果您有任何功能建议或遇到问题，我们邀请您点击下方链接后，微信扫码，加入面试精灵用户群，请不吝赐教。
+更多联系方式请点击：[联系我们](https://interview-genie.com/blog/contact-us)
 
 ## bug 反馈
-如果您在使用过程中遇到问题或bug，请即时反馈给[<u>我们</u>](mailto:interview-genie@qq.com)
+如果您在使用过程中遇到问题或bug，请即时反馈给[我们](mailto:interview-genie@qq.com)】
+
+上面是面试精灵网站的使用说明。下面是其中AI联网搜索功能的PR稿：
+【---
+slug: new-feature-ai-search
+title: 金三银四招聘季，“面试精灵”又发新功能——AI联网搜索
+date: 2025-03-17T17:31:27.154Z
+excerpt: 金三银四招聘季，正是收割 Offer 的好时候。基于大模型的AI面试助手--面试精灵又添新功能：AI联网搜索。通过网络检索最新的技术发展、时事分析、公司简介信息，提高时效性问题回复效果，降低大模型幻觉率，助您拿到心仪 Offer。赶紧注册体验吧！
+coverImage: https://pic.interview-genie.com/04-new-feature-AI-search-demo.jpg
+tags:
+  - News
+---
+
+# 引言
+春天来了，万物复苏，又到了～招聘～的季节～
+
+又是一年一度的“金三银四”招聘季，相信很多小伙伴都在忙着准备面试吧。短短两个月的面试黄金期，可谓时间紧任务重。社招的小伙伴们可能还在被老板催着加班吧，哪来的时间复习算法题。校招的同学们大概无论怎么努力复习，都觉得知识点太多根本复习不过来。
+
+别担心，面试精灵正是为解决这些问题而生。面试精灵是以顶级GPT为核的AI面试助手，从简历优化、笔试助手、在线面试回答、到面试记录与分析，提供全流程的面试辅助。助您拿到心仪的大厂Offer！
+
+此前，用户反馈使用面试精灵时发现一个痛点：面对“2025年最火的大模型是哪一个？”这类时效性问题时，模型容易陷入“胡编乱造”的幻觉。为此，我们重磅推出 AI 联网搜索功能，让面试准备不仅有深度，更能紧跟前沿动态！
+
+快来体验吧 >> [interview-genie.com](https://interview-genie.com)
+
+原文地址：https://interview-genie.com/blog/new-feature-ai-search
+
+关键字：Interview Genie, 面试精灵, AI面试助手, 简历助手, ChatGPT 面试, 大模型面试, 大型语言模型, 面试大师, 智能面试, AI笔试助手, AI联网搜索, 金三银四招聘季
+
+# 介绍
+AI 联网搜索使用 AI 分析出要完成当前问题需要搜索的关键字，并调用搜索引擎检索相关信息。然后以这些搜索结果作为补充信息，优化回答效果。
+
+功能亮点：
+- AI 联网搜索：通过关键词分析自动检索实时信息，解决时事、技术动态等“时效性难题”。
+- 幻觉率降低：结合权威信息源，减少错误回答风险。
+
+# 如何开启？
+开启“AI联网搜索”功能非常简单，只需按照以下步骤操作：  
+![AI联网搜索设置](https://pic.interview-genie.com/05-upgrade-interface-for-more-information-prepare-0407v1.png)
+
+1. 登录账户：首先，确保您已登录面试精灵网站。
+2. 打开“面试准备”对话框：在主界面点击“新建面试”或在面试界面点击输入框左下角的“面试信息设置”按钮，打开“面试准备”对话框。
+3. 展开“高级面试设置”，找到“联网搜索模式”选项。
+4. 调整选项：
+- 禁用：禁用此功能，不进行联网检索。
+- 开启：启用此功能，AI将在回答问题时深度思考检索关键字并检索相关信息，然后使用检索结果优化回答效果。
+- 自动：系统将根据问题的性质智能决定是否启用联网搜索。
+
+# 效果咋样？
+如果当前回复使用了“AI联网搜索”功能，则会在回复的状态栏实时显示检索关键字、检索进度、检索到的文章数量及列表。
+回复文本下方会列出实际引用到的文章列表，并在回复内容中标注引用文章，方便您检验结果准确性。
+
+回答效果如下图所示：
+![AI联网搜索效果图](https://pic.interview-genie.com/04-new-feature-AI-search-demo.jpg)
+
+引入“AI联网搜索”功能后，面试精灵在处理以下类型的问题时表现出显著改善：
+
+1. 最新科技进展
+   面试官用该类问题考察应试者对前沿技术的跟踪。示例：“2025年初国内爆火的AI大模型是哪个？介绍他的技术特点”
+   ![AI联网搜索效果对比图1](https://pic.interview-genie.com/04-new-feature-AI-search-compare1.jpg)
+2. 热点时事分析
+   示例：“你了解特朗普2025年上任后的关税政策么？对于中国的发展有什么影响？”
+   ![AI联网搜索效果对比图2](https://pic.interview-genie.com/04-new-feature-AI-search-compare2.jpg)
+3. 企业简介与发展近况
+   该类问题主要用于考察应试者对于目标岗位目标公司的了解程度。“你了解我们支付宝公司的核心价值观么？我们公司最近发生了五分钟 bug 事件，这个事你怎么看？”
+   ![AI联网搜索效果对比图3](https://pic.interview-genie.com/04-new-feature-AI-search-compare3.jpg)
+
+通过实际测试，我们发现该功能不仅提高了回答的准确性，还大幅减少了大模型可能出现的“幻觉”现象，即生成与现实不符的信息。
+
+更多使用技巧，请访问[面试精灵使用手册](https://interview-genie.com/blog/how2use)查看。
+
+# 注意事项
+使用“AI联网搜索”功能有以下几点需要留意：
+- 耗时：由于涉及到网络搜索，使用“AI联网搜索”功能可能会使回答响应时间延迟。
+- 开销：使用“AI联网搜索”功能可能会增加token消耗，每个问题回答的耗费会有所增加。
+- 部分问题回答效果有回退：对于某些特定问题，尤其是那些需要深度专业知识的问题，联网搜索可能不会显著提升回答质量。
+请根据实际需求评估，合理设置“AI联网搜索”功能的状态。
+
+
+# 联系我们
+欢迎您使用小红书扫码关注我们，实时获取更多面试精灵功能更新发布。
+![面试精灵小红书二维码](https://pic.interview-genie.com/interview-genie-XiaoHongShu.jpg)
+
+如果您有任何功能建议或遇到问题，我们邀请您点击下方链接后，微信扫码，加入面试精灵用户群，请不吝赐教。
+更多联系方式请点击：[联系我们](https://interview-genie.com/blog/contact-us)
+
+# 结语
+面试精灵的目标是做懂你，懂面试官，懂知识的大模型AI面试助手。我们希望通过不断的技术创新和用户反馈，打造出能够切实帮助用户解决实际问题的强大工具。
+
+本期更新的“AI联网搜索”能够帮助您解决更多复杂面试问题，快来体验吧！>> [interview-genie.com](https://interview-genie.com)
+
+您的每一次反馈都是对我们最大的支持，感谢您的使用和支持！】
+
+请参考【AI联网搜索PR稿】，结合结合上述【和】之间的面试精灵使用说明中关于最新功能“媒体按键控制”功能的说明，生成一篇介绍最新功能“媒体按键控制”功能的PR稿。注意SEO优化，降低营销感，输出完整笔记后，请指出具体做了哪些SEO优化和转化技巧。
