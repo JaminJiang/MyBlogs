@@ -46,7 +46,7 @@
 
 # 面试精灵如何助您一臂之力？
 面试精灵的在线面试回答功能非常强大。支持简历和岗位描述文档上传，以期更了解你的经历和描述，生成更个性化、更贴切的回复。利用实时语音识别系统，声纹识别技术，结合长上下文大模型快速深入理解面试官意图。使用RAG技术进一步扩充强大GPT的知识，轻松应付各类面试问题。面试精灵--最懂你，最懂面试官，最懂知识的大模型AI面试助手。
-![面试精灵操作界面](https://pic.interview-genie.com/00-interview-genie-how2use-main-sm-v2.jpg)
+![面试精灵操作界面](https://pic.interview-genie.com/00-interview-genie-how2use-main-sm-0528.jpg)
 
 新用户注册后，进入主页[interview-genie.com](https://interview-genie.com)，点击面试助手对话框，即可通过输入框与面试精灵进行对话。
 

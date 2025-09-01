@@ -18,7 +18,7 @@ tags:
 # 联系方式
 ## 微信群
 如果您有任何功能建议或遇到问题，我们邀请您通过微信扫码，加入面试精灵用户群，请不吝赐教。  
-![面试精灵微信用户群二维码](https://pic.interview-genie.com/interview-genie-WeixinGroup-sm-20250625.jpg)
+![面试精灵微信用户群二维码](https://pic.interview-genie.com/interview-genie-WeixinGroup-xs-20250805.jpg)
 
 若微信群更新不及时，请用微信扫下方二维码添加客服，拉您进群。
 ![面试精灵小二微信二维码](https://pic.interview-genie.com/interview-genie-Weixin-person-xs.png)
